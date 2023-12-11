@@ -12,9 +12,12 @@ button.addEventListener('click', (e) => {
     }
 
     if (data.username === dataOk.username && data.password === dataOk.password) {
-        console.log("ENTRE ACA");       
+        console.log("ENTRE ACA");      
         window.location.href= "./productos.html"
     } else {        
-        errorMessages.textContent = "Usuario o contraseña incorrectos.";
+        errorMessages.textContent = "Usuario o contraseña incorrectos."
+        document.getElementById("username").value = ""
+        document.getElementById("password").value = ""
+        username.focus();
     }
 })
