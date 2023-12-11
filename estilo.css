@@ -8,7 +8,6 @@
     list-style: none;
     box-sizing: border-box;
     font-family:"Josefin Sans", sans-serif;
-    color: white;
 }
 
 main {
@@ -32,6 +31,10 @@ main {
 #dropdownId{
     color: white;
     font-style: bold;
+}
+
+#msj_cargando {
+    color: white;
 }
 
 .container {

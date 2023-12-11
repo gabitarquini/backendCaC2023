@@ -3,6 +3,7 @@
 
 <head>
     <title>GYM-HTML - Productos</title>
+    <link rel="shortcut icon" href="./img/logoGym.png" type="image/x-icon">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -22,7 +23,7 @@
             <a class="btn btn-primary" href="producto_nuevo.html">Nuevo</a>
             <br><br>
             <div v-if="error">
-                <p>No se ha podido cargar los datos. Vuelva a intentarlo mas tarde.</p>
+                <p id="msj_cargando">No se ha podido cargar los datos. Vuelva a intentarlo mas tarde.</p>
             </div>
             <div v-else>
                 <section v-if="cargando">
